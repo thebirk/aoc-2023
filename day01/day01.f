@@ -27,6 +27,7 @@
       end program day01
       
       subroutine get_calibration_from_line_part2(line, calibration)
+        implicit none
         character*64, intent(in)  :: line
         integer     , intent(out) :: calibration
         integer, parameter :: ASCII_ZERO = ICHAR('0')
@@ -67,6 +68,7 @@
       end subroutine get_calibration_from_line_part2
 
       subroutine get_calibration_from_line_part1(line, calibration)
+        implicit none
         character*64, intent(in)  :: line
         integer     , intent(out) :: calibration
         integer, parameter :: ASCII_ZERO = ICHAR('0')
